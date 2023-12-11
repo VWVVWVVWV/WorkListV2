@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px+vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+
+}
+.err {
+  color: darkred;
+
+}
+
+
+      .shadow {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+      }
+      .errorWindow {
+        width: 270px;
+        height: 100px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid darkred;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+        overflow-y: inherit;
+      }
+
+      .addeditWindow {
+        width: 270px;
+        height: 250px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid blue;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+        overflow-y: inherit;
+      }
+      .addeditWindow button{
+        margin-left: 10px;
+      }
+      .addeditWindow input{
+        margin-left: 10px;
+      }
+
+      .loginWindow {
+        width: 300px;
+        height: 140px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid blue;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+        overflow-y: inherit;
+      }
+
+
+.table_input{
+  width: 100%;
+}
+
+.Login{
+  text-align: left;
+  margin: 0px;
+}
+
+.Title{
+  border:0px;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 
+    minmax(110px,110px)
+    minmax(150px,150px)
+    minmax(150px,150px)
+    minmax(250px,250px)    
+    minmax(150px,150px)
+    minmax(150px,150px)
+    minmax(150px,150px);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th,
+td {
+  padding: 15px;
+  overflow:auto;
+  #text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #6c7ae0;
+  text-align: left;
+  color: white;
+}
+
+th:last-child {
+  border: 0;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #808080;
+  text-align: left;
+}
+
+tr:nth-child(even) td {
+  background: #f8f6ff;
+}
+
+.field {clear:both; text-align:right; line-height:25px;}
+.label {float:left; padding-right:10px;}
+
+
