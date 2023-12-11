@@ -207,13 +207,10 @@ async def login() -> str:
 
 @app.route('/logout', methods=['POST'])
 async def logout() -> str:
-    token=''
     if request.method == 'POST':
         token = str(request.get_json().get('token', ""))
         if token in admin_sessions:
             admin_sessions.remove(token)
-        else:
-            token = ''
-    return token
+    return ''
 
 app.run(host='0.0.0.0', port=82, debug=True)
