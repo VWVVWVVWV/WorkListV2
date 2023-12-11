@@ -3,12 +3,12 @@ import  GetParam from "../../models/Getparam";
 import  Login from "../../models/Login";
 import  Todofinish from '../../models/Todofinish';
 import  Todoedit from '../../models/Todoedit';
-import  SeverResponce from '../../models/SeverResponce';
+import  ServerResponce from '../../models/ServerResponce';
 import axios from "axios";
 const MY_SERVER = "http://localhost:82/"
   
 export function getTodos(new_param:GetParam) {
-    return new Promise<{ data: SeverResponce}>((resolve) =>
+    return new Promise<{ data: ServerResponce}>((resolve) =>
         axios.post(MY_SERVER+"tasks",new_param).then(res => resolve({'data': res.data}))
     );
 }
